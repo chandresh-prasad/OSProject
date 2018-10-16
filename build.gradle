@@ -1,9 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-/*
-    Hi, this project was created by Firoz Memon,
-    feel free to connect with me at
-    https://www.linkedin.com/in/firozmemon0/
-*/
+
 buildscript {
     repositories {
         jcenter()

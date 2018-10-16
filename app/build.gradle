@@ -1,9 +1,5 @@
 apply plugin: 'com.android.application'
-/*
-    Hi, this project was created by Firoz Memon,
-    feel free to connect with me at
-    https://www.linkedin.com/in/firozmemon0/
-*/
+
 android {
     compileSdkVersion 26
     buildToolsVersion "26.0.1"
