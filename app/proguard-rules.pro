@@ -24,7 +24,4 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 #
-#   Hi, this project was created by Firoz Memon,
-#   feel free to connect with me at
-#   https://www.linkedin.com/in/firozmemon0/
 #
