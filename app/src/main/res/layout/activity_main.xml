@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fm.chandresh.osproject.MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineVertical05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineVertical50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineVertical95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHorizontal05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHorizontal50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHorizontal95"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/frameSizeTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineVertical50"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineVertical05"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineVertical95"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineHorizontal05">
+
+        <EditText
+            android:id="@+id/frameSizeEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Frame size"
+            android:inputType="number" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/pagesTextInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineVertical05"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineVertical95"
+        app:layout_constraintTop_toBottomOf="@+id/frameSizeTextInputLayout">
+
+        <EditText
+            android:id="@+id/pagesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Pages (Ex: 7,0,1)"
+            android:inputType="text" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/processButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Process FIFO Algorithm"
+        app:layout_constraintBottom_toTopOf="@+id/projectTextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pagesTextInputLayout" />
+
+    <TextView
+        android:id="@+id/projectTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="FIFO Page Replacement Algorithm"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal95"
+        app:layout_constraintLeft_toLeftOf="@+id/guidelineVertical05"
+        app:layout_constraintRight_toLeftOf="@+id/guidelineVertical95"
+        app:layout_constraintTop_toBottomOf="@+id/processButton" />
+
+</android.support.constraint.ConstraintLayout>
